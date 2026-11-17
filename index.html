@@ -5,23 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>재훈의 미스터리 블로그</title>
+    <meta name="description" content="세상 모든 미스터리를 탐구하고 소개합니다.">
+    <meta name="keywords" content="수수께끼,고대 의비밀,외계,우주,심해,초자연현상,미스터리">
+    <meta name="author" content="재훈의 미스터리">
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="32x32">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="미스터리 가이드">
+    <meta property="og:description" content="세상 모든 미스터리를 탐구하고 소개합니다.">
+    <meta property="og:image"
+        content="https://genai-frontend-202610.github.io/web-standard-rwd-template/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- 모바일 주소창 색 -->
+    <meta name="theme-color" content="#1e1b4b">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
 </head>
 
 <body>
+
     <header id="top">
-        <h1 class="logo">
-            🌐​ 세계 미스터리
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#">최신글</a></li>
-                <li><a href="#">사진첩</a></li>
-                <li><a href="#">방명록</a></li>
-            </ul>
-        </nav>
+        <div class="inner">
+            <h1 class="logo">
+                🌐​ 세계 미스터리
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#posts">최근글</a></li>
+                    <li><a href="#photos">사진첩</a></li>
+                    <li><a href="guide">방명록</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="mob-nav-btn">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+            </a>
+        </div>
     </header>
-    <section clsss="hero">
+
+    <section class="hero">
         <div class="hero-txt">
             <p class="sub">my hobby blog</p>
             <h2>미스터리 가이드</h2>
@@ -50,6 +78,7 @@
             <article class="post">
                 <div class="thumb">
                     <span class="date">11.04</span>
+                    <div class="bg"></div>
                 </div>
                 <div class="info">
                     <div class="cate">분석 일기 | #고대기술 #수수께끼 </div>
@@ -63,13 +92,14 @@
 
             <article class="post">
                 <div class="thumb">
-                    <span class="date">11.04</span>
+                    <span class="date">11.01</span>
+                    <div class="bg"></div>
                 </div>
                 <div class="info">
-                    <div class="cate">분석 일기 | #고대기술 #수수께끼 </div>
-                    <h3>고대인들은 어떻게 그렸을까?</h3>
-                    <p>나스카 지상화를 보게되면 떠오르는 궁금증 중에 하나로, 거대한 그림들을 정밀한 방법으로 그릴 수 있었던 방법이 무엇일까요 ? 고대 나스카인들의 기술과 실제 복원 실험 사례를
-                        살펴보겠습니다 ...
+                    <div class="cate">탐구 일기 | #심해생물 #바다 #해파리 </div>
+                    <h3>심해에는 무엇이 숨어 있을까 ?</h3>
+                    <p>심해에는 빛을 내는 생물, 열수 분출공 주변의 생태계, 아직 발견되지 않은 해양 생물 등 심해에는 다양한 미스터리가 남아 있는데요 . 먼저 심해의 기준부터 천천히 살펴보고자
+                        합니다. 심해는 수심...
                     </p>
                     <a href="#" class="more">더 알아보기</a>
                 </div>
@@ -77,39 +107,146 @@
 
             <article class="post">
                 <div class="thumb">
-                    <span class="date">11.04</span>
+                    <span class="date">10.30</span>
+                    <div class="bg"></div>
                 </div>
                 <div class="info">
-                    <div class="cate">분석 일기 | #고대기술 #수수께끼 </div>
-                    <h3>고대인들은 어떻게 그렸을까?</h3>
-                    <p>나스카 지상화를 보게되면 떠오르는 궁금증 중에 하나로, 거대한 그림들을 정밀한 방법으로 그릴 수 있었던 방법이 무엇일까요 ? 고대 나스카인들의 기술과 실제 복원 실험 사례를
-                        살펴보겠습니다 ...
+                    <div class="cate">탐구 일기 | #불가사의 #우주의크기 #제2의지구 </div>
+                    <h3>외계 문명은 왜 발견되지 않을까?</h3>
+                    <p>우주에는 수많은 은하와 별, 행성이 존재합니다. 그렇다면 지구처럼 생명체가 탄생할 수 있는 환경도 다른 곳에 존재하지 않을까요? 우선, 우주는 어느정도의 크기인지
+                        알아보겠습니다. 과연 우리...
                     </p>
                     <a href="#" class="more">더 알아보기</a>
                 </div>
             </article>
+        </section>
 
+        <section class="mystery-guide">
+            <h2 id="guide-title">미스터리 카테고리</h2>
+
+
+            <ul class="guide-tabs">
+                <li>
+                    <button type="button">
+                        고대
+                    </button>
+                </li>
+
+                <li>
+                    <button type="button">
+                        우주
+                    </button>
+                </li>
+
+                <li>
+                    <button type="button">
+                        심해
+                    </button>
+                </li>
+
+                <li>
+                    <button type="button">
+                        초자연
+                    </button>
+                </li>
+            </ul>
+
+
+            <ol class="guide-content">
+                <li id="ancient">
+                    <div class="card-top">
+                        <span class="num">01</span>
+                        <span class="badge">Ancient</span>
+                    </div>
+
+                    <div class="txt-wrap">
+                        <h3>고대</h3>
+                        <p>
+                            시간 속에 사라진 문명과 거대한 유적,
+                            고대인들이 남긴 불가사의한 흔적을 따라
+                            인류 역사의 숨겨진 이야기를 파헤칩니다.
+                        </p>
+                    </div>
+                </li>
+
+                <li id="space">
+                    <div class="card-top">
+                        <span class="num">02</span>
+                        <span class="badge">Universe</span>
+                    </div>
+
+                    <div class="txt-wrap">
+                        <h3>우주</h3>
+                        <p>
+                            끝을 알 수 없는 우주, 지구 밖 생명체의 가능성과
+                            미지의 천체들. 우리가 아직 답하지 못한
+                            우주적 질문들을 살펴봅니다.
+                        </p>
+                    </div>
+                </li>
+
+                <li id="deepsea">
+                    <div class="card-top">
+                        <span class="num">03</span>
+                        <span class="badge">Deep Sea</span>
+                    </div>
+
+                    <div class="txt-wrap">
+                        <h3>심해</h3>
+                        <p>
+                            인간의 발길이 닿기 어려운 깊고 어두운 바다.
+                            극한 환경에서 살아가는 기묘한 생명체와
+                            아직 밝혀지지 않은 바닷속 비밀을 탐구합니다.
+                        </p>
+                    </div>
+                </li>
+
+                <li id="supernatural">
+                    <div class="card-top">
+                        <span class="num">04</span>
+                        <span class="badge">Paranormal</span>
+                    </div>
+
+                    <div class="txt-wrap">
+                        <h3>초자연</h3>
+                        <p>
+                            현실과 상상의 경계에서 전해지는 기이한 사건들.
+                            유령 목격담과 초자연적 현상,
+                            오래된 괴담 속 기록을 추적합니다.
+                        </p>
+                    </div>
+                </li>
+            </ol>
 
         </section>
+
 
         <section id="photos">
             <h2>사진첩</h2>
             <ul class="photos">
                 <li class="p1">
+                    <div class="photo-bg"></div>
                 </li>
                 <li class="p2">
+                    <div class="photo-bg"></div>
                 </li>
                 <li class="p3">
+                    <div class="photo-bg"></div>
                 </li>
                 <li class="p4">
+                    <div class="photo-bg"></div>
                 </li>
             </ul>
         </section>
 
     </main>
-    <footer><p>2026 미스터리</p>
-    <p>since 2025  |  이재훈</p></footer>
+    <footer>
+        <p>© 2026 미스터리</p>
+        <p>since 2025 | 이재훈</p>
+    </footer>
     <a href="#" class="top">TOP</a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
