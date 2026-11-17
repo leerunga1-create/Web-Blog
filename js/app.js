@@ -2,16 +2,7 @@ const body = document.querySelector('body')
 const topBtn = document.querySelector('.top')
 const mNavBtn = document.querySelector('.mob-nav-btn')
 const navBtns = document.querySelectorAll('nav ul li a')
-const swiper = new Swiper('.gallery', {
-    navigation: {
-        nextEl: '.gallery .swiper-button-next',
-        prevEl: '.gallery .swiper-button-prev',
-    },
-    pagination: {
-        el: '.gallery .swiper-pagination',
-    },
-    loop:true
-});
+
 
 navBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -84,3 +75,15 @@ mNavBtn.addEventListener('click', (e) => {
 })
 
 body.classList.add('m-nav-open')
+
+
+
+const swiper = new Swiper('.hero-slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
