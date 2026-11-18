@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 
@@ -69,9 +71,9 @@
 
                         <div class="hero-txt">
                             <p class="sub">my hobby blog</p>
-                            <h2>생각의 전환 </h2>
-                            <p>
-                                설명: 관점이 뒤집히는 순간, 세상을 다르게 보는 사고법을 모았습니다</p>
+                            <h2>미지의 세계</h2>
+                            <p>끝없는 우주와 불가사의한 현상 속에서, 아직 풀리지 않은 질문을 마주합니다
+                                </p>
                             <a href="#posts" class="btn">최신 글 보기</a>
                         </div>
                     </div>
@@ -82,9 +84,9 @@
 
                         <div class="hero-txt">
                             <p class="sub">my hobby blog</p>
-                            <h2>생각의 전환 </h2>
+                            <h2>숨겨진 비밀</h2>
                             <p>
-                                설명: 관점이 뒤집히는 순간, 세상을 다르게 보는 사고법을 모았습니다</p>
+                                잊힌 문명의 흔적부터 깊은 바닷속 수수께끼까지, 숨겨진 이야기를 따라갑니다.</p>
                             <a href="#posts" class="btn">최신 글 보기</a>
                         </div>
                     </div>
@@ -103,27 +105,27 @@
 
     <main>
         <section class="profile">
-            <p class="avatar">👻</p>
-            <div class="intro">
+            <p data-aos="fade-up" data-aos-delay="0" class="avatar">👻</p>
+            <div class="intro" data-aos="fade-up" data-aos-delay="50">
                 <h3>재훈의 미스터리</h3>
                 <p>세상 모든 미스터리에 대해 탐구하고 리뷰합니다.</p>
             </div>
             <ul class="tags">
-                <li>#미스터리</li>
-                <li>#과학</li>
-                <li>#수수께끼</li>
+                <li data-aos="fade-up" data-aos-delay="300">#미스터리</li>
+                <li data-aos="fade-up" data-aos-delay="400">#과학</li>
+                <li data-aos="fade-up" data-aos-delay="500">#수수께끼</li>
             </ul>
         </section>
 
         <section id="posts">
             <h2>최근 글</h2>
 
-            <article class="post">
-                <div class="thumb">
+            <article class="post"data-aos="fade-up" data-aos-delay="1000">
+                <div class="thumb" data-aos="fade-up" data-aos-delay="100">
                     <span class="date">11.04</span>
                     <div class="bg"></div>
                 </div>
-                <div class="info">
+                <div class="info" data-aos="fade-up" data-aos-delay="500">
                     <div class="cate">분석 일기 | #고대기술 #수수께끼 </div>
                     <h3>고대인들은 어떻게 그렸을까?</h3>
                     <p>나스카 지상화를 보게되면 떠오르는 궁금증 중에 하나로, 거대한 그림들을 정밀한 방법으로 그릴 수 있었던 방법이 무엇일까요 ? 고대 나스카인들의 기술과 실제 복원 실험 사례를
@@ -134,11 +136,11 @@
             </article>
 
             <article class="post">
-                <div class="thumb">
+                <div class="thumb"data-aos="fade-up" data-aos-delay="100">
                     <span class="date">11.01</span>
                     <div class="bg"></div>
                 </div>
-                <div class="info">
+                <div class="info" data-aos="fade-up" data-aos-delay="500">
                     <div class="cate">탐구 일기 | #심해생물 #바다 #해파리 </div>
                     <h3>심해에는 무엇이 숨어 있을까 ?</h3>
                     <p>심해에는 빛을 내는 생물, 열수 분출공 주변의 생태계, 아직 발견되지 않은 해양 생물 등 심해에는 다양한 미스터리가 남아 있는데요 . 먼저 심해의 기준부터 천천히 살펴보고자
@@ -149,11 +151,11 @@
             </article>
 
             <article class="post">
-                <div class="thumb">
+                <div class="thumb" data-aos="fade-up" data-aos-delay="100">
                     <span class="date">10.30</span>
                     <div class="bg"></div>
                 </div>
-                <div class="info">
+                <div class="info" data-aos="fade-up" data-aos-delay="500">
                     <div class="cate">탐구 일기 | #불가사의 #우주의크기 #제2의지구 </div>
                     <h3>외계 문명은 왜 발견되지 않을까?</h3>
                     <p>우주에는 수많은 은하와 별, 행성이 존재합니다. 그렇다면 지구처럼 생명체가 탄생할 수 있는 환경도 다른 곳에 존재하지 않을까요? 우선, 우주는 어느정도의 크기인지
@@ -289,6 +291,8 @@
     </footer>
     <a href="#" class="top">TOP</a>
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="./js/app.js"></script>
 </body>
 
