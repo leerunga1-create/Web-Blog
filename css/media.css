@@ -1,4 +1,5 @@
 @media screen and (max-width:1024px) {
+
     .hero h2 {
         font-size: 4.4rem;
     }
@@ -213,6 +214,7 @@
     .hero h2 {
         font-size: 3.6rem;
     }
+
     .profile {
         flex-direction: column;
         height: auto;
@@ -278,7 +280,7 @@ text-align: left : 박스 내부의 글자를 왼쪽 정렬*/
     }
 
 
-/*기존 요소에 설정된 margin을 제거해서 Flexbox의 gap으로 간격을 관리하기 위한 것*/
+    /*기존 요소에 설정된 margin을 제거해서 Flexbox의 gap으로 간격을 관리하기 위한 것*/
 
     .info .cate {
         margin: 0;

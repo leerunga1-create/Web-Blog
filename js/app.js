@@ -6,8 +6,8 @@ const navBtns = document.querySelectorAll('nav ul li a')
 AOS.init({
     duration: 1000,
     easing: 'ease-out',
-    offset: 80           // 화면 아래쪽에서 80px 들어오면 실행
-    // 끝으로 갈수록 부드럽게 감속
+    offset: 80
+
 });
 
 navBtns.forEach(btn => {
@@ -92,4 +92,9 @@ const swiper = new Swiper('.hero-slider', {
     pagination: {
         el: '.swiper-pagination',
     },
+    effect: 'fade',
+fadeEffect: {
+    crossFade: true
+},
+speed: 800
 });
